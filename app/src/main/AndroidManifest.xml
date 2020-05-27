@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginPageShipper"></activity>
+        <activity android:name=".UserRegistrationForm"></activity>
+        <activity android:name=".LoginPageShipper" />
         <activity android:name=".LoginPage" />
         <activity android:name=".LandingPage" />
         <activity android:name=".MainActivity">
