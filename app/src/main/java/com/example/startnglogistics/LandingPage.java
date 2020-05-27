@@ -27,7 +27,6 @@ public class LandingPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentLoginPage = new Intent(LandingPage.this, LoginPage.class);
                 startActivity(intentLoginPage);
-                finish();
             }
         });
 

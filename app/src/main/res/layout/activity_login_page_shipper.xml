@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginPage">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,7 +20,8 @@
         android:fontFamily="@font/bungee"
         android:text="HELLO THERE, WELCOME"
         android:textColor="@color/text_color_blue"
-        android:textSize="35sp"/>
+        android:textSize="35sp"
+         />
 
     <TextView
         android:id="@+id/textView2"
@@ -38,19 +37,18 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="340dp"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         android:outlineSpotShadowColor="@color/text_color_blue">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username"
+            android:id="@+id/username_shipper"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="5dp"
             android:layout_marginEnd="24dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -62,7 +60,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
+            android:id="@+id/password_shipper"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,7 +80,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_forget_password"
+            android:id="@+id/btn_forget_password_shipper"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
@@ -92,7 +90,7 @@
             android:textColor="@color/text_color_blue" />
 
         <Button
-            android:id="@+id/sign_in"
+            android:id="@+id/sign_in_shipper"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -102,17 +100,17 @@
             android:textColor="#fff"/>
 
         <Button
-            android:id="@+id/btn_sign_in_as_shipper"
+            android:id="@+id/btn_sign_in_as_user"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:background="@drawable/background_pry"
-            android:text="Sign in as a shipper"
+            android:text="Sign in as a user"
             android:textColor="#fff" />
 
         <Button
-            android:id="@+id/btn_new_user_signup"
+            android:id="@+id/btn_new_user_signup_sp"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
