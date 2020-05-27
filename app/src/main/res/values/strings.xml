@@ -3,4 +3,8 @@
     <string name="startng">STARTNG</string>
     <string name="logistics_tracking">LOGISTICS TRACKING</string>
     <string name="company_logo">Company logo</string>
+    <string name="sign_up_with_google">Sign up with google</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up_as_a_shipper">sign up as a shipper</string>
 </resources>
