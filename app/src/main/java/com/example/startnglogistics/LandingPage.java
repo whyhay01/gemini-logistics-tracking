@@ -30,5 +30,13 @@ public class LandingPage extends AppCompatActivity {
             }
         });
 
+        mButtonSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSignupUser = new Intent(LandingPage.this,UserRegistrationForm.class);
+                startActivity(intentSignupUser);
+            }
+        });
+
     }
 }
