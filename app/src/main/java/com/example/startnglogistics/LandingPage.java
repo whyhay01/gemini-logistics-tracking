@@ -38,5 +38,13 @@ public class LandingPage extends AppCompatActivity {
             }
         });
 
+        mButtonSignupShipper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentShipperSignup = new Intent(LandingPage.this,ShipperRegistrationForm.class);
+                startActivity(intentShipperSignup);
+            }
+        });
+
     }
 }
