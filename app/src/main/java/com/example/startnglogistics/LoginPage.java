@@ -17,6 +17,7 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
 
         mButtonSignShipper = findViewById(R.id.btn_sign_in_as_shipper);
+        mButtonNewUser = findViewById(R.id.btn_new_user_signup);
 
         mButtonSignShipper.setOnClickListener(new View.OnClickListener() {
             @Override
