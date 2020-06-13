@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandingPage">
-
+    tools:context=".SignupPage">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -18,12 +17,12 @@
         app:srcCompat="@drawable/startng" />
 
     <Button
-        android:id="@+id/btn_signin"
+        android:id="@+id/btn_user_signup"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="150dp"
         android:background="@drawable/background_pry"
-        android:text="@string/log_in"
+        android:text="@string/sign_up_as_a_user"
         android:textColor="#fff"
         android:textSize="18sp"
         android:gravity="center"
@@ -32,18 +31,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/btn_signup"
+        android:id="@+id/btn_shipper_signup"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/background_pry"
         android:gravity="center"
-        android:text="@string/sign_up"
+        android:text="@string/sign_up_as_a_shipper"
         android:textColor="#fff"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btn_user_signup"
+        app:layout_constraintVertical_bias="0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

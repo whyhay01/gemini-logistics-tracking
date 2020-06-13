@@ -20,7 +20,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="520dp"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
@@ -56,6 +56,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email Address"
+                android:textColor="@color/text_color_blue" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_user"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
                 android:textColor="@color/text_color_blue" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -137,23 +154,23 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_sign_up_user"
+        android:id="@+id/btn_register_user"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
         android:background="@drawable/background_pry"
-        android:text="Sign up"
+        android:text="Register"
         android:textColor="#fff"/>
 
-    <Button
-        android:id="@+id/btn_sign_up_as_shipper"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/background_pry"
-        android:text="Sign up as a shipper"
-        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/txt_signin_reg_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="@font/antic"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account? sign in"
+        android:textColor="@color/text_color_blue"/>
 
 </LinearLayout>

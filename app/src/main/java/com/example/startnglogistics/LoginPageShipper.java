@@ -9,30 +9,35 @@ import android.widget.Button;
 
 public class LoginPageShipper extends AppCompatActivity {
 
-    Button mButtonSigninUser;
+    Button mButtonForgetPassword;
     Button mButtonNewUser;
+    Button mButtonSigninShipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page_shipper);
 
-        mButtonSigninUser = findViewById(R.id.btn_sign_in_as_user);
         mButtonNewUser = findViewById(R.id.btn_new_user_signup_sp);
+        mButtonSigninShipper = findViewById(R.id.sign_in_shipper);
 
-        mButtonSigninUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentSigninUser =new Intent(LoginPageShipper.this, LoginPage.class);
-                startActivity(intentSigninUser);
-            }
-        });
 
         mButtonNewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentNewUser = new Intent(LoginPageShipper.this, UserRegistrationForm.class);
+                Intent intentNewUser = new Intent(LoginPageShipper.this, LandingPage.class);
                 startActivity(intentNewUser);
+                finish();
+            }
+        });
+
+        mButtonSigninShipper.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View v) {
+                Intent intentShipperSignin = new Intent(LoginPageShipper.this, CreateShipmentActivity.class);
+                startActivity(intentShipperSignin);
+                finish();
+
             }
         });
     }

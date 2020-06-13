@@ -9,40 +9,32 @@ import android.widget.Button;
 
 public class LandingPage extends AppCompatActivity {
 
-    Button mButtonSignupShipper;
     Button mButtonSignup;
-    Button mButtonlogin;
+    Button mButtonSignin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
 
-        mButtonSignupShipper = findViewById(R.id.btn_sign_up_shipper);
         mButtonSignup = findViewById(R.id.btn_signup);
-        mButtonlogin = findViewById(R.id.btn_login);
+        mButtonSignin = findViewById(R.id.btn_signin);
 
-        mButtonlogin.setOnClickListener(new View.OnClickListener() {
+        mButtonSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentLoginPage = new Intent(LandingPage.this, LoginPage.class);
-                startActivity(intentLoginPage);
+                Intent signinIntent = new Intent(LandingPage.this, LoginActivity.class);
+                startActivity(signinIntent);
+                finish();
             }
         });
 
         mButtonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSignupUser = new Intent(LandingPage.this,UserRegistrationForm.class);
-                startActivity(intentSignupUser);
-            }
-        });
-
-        mButtonSignupShipper.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentShipperSignup = new Intent(LandingPage.this,ShipperRegistrationForm.class);
-                startActivity(intentShipperSignup);
+                Intent signupIntent = new Intent(LandingPage.this, SignupPage.class);
+                startActivity(signupIntent);
+                finish();
             }
         });
 
