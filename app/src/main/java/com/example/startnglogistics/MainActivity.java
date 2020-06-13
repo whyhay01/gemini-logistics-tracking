@@ -50,4 +50,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }, SPLASH_SCREEN);
     }
+
+   /* @Override
+    protected void onPause() {
+        super.onPause();
+        FirebaseUtils.detachListener();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        FirebaseUtils.attachListener();
+    }*/
 }

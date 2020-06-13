@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "670594438323",
+    "firebase_url": "https://logisticstracking-30bcf.firebaseio.com",
+    "project_id": "logisticstracking-30bcf",
+    "storage_bucket": "logisticstracking-30bcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670594438323:android:c44ce48c311daf52a34cc6",
+        "android_client_info": {
+          "package_name": "com.example.startnglogistics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670594438323-ltrbfebccqgvtelf0cjtlsog2goggoup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.startnglogistics",
+            "certificate_hash": "258af820a25b8389408d42cf0bac1d2b76570151"
+          }
+        },
+        {
+          "client_id": "670594438323-25r8f94v6bps9j7i7p0km89p9iat3phc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFbikgPrKUibnpgVAmtbOaotCh1kVOdDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670594438323-25r8f94v6bps9j7i7p0km89p9iat3phc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="340dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:outlineSpotShadowColor="@color/text_color_blue">
 
@@ -98,16 +98,6 @@
             android:background="@drawable/background_pry"
             android:text="Sign in"
             android:textColor="#fff"/>
-
-        <Button
-            android:id="@+id/btn_sign_in_as_user"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/background_pry"
-            android:text="Sign in as a user"
-            android:textColor="#fff" />
 
         <Button
             android:id="@+id/btn_new_user_signup_sp"

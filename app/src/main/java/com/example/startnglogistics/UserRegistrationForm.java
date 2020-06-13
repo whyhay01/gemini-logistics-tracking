@@ -9,18 +9,17 @@ import android.widget.Button;
 
 public class UserRegistrationForm extends AppCompatActivity {
 
-    Button mButtonSignupUser;
-    Button mButtonSignupShipper;
+    Button mButtonRegisterUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_registration_form);
 
-         mButtonSignupUser = findViewById(R.id.btn_sign_up_user);
-         mButtonSignupShipper = findViewById(R.id.btn_sign_up_as_shipper);
+         mButtonRegisterUser = findViewById(R.id.btn_register_user);
 
-         mButtonSignupUser.setOnClickListener(new View.OnClickListener() {
+
+         mButtonRegisterUser.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                  Intent intentUserLogin = new Intent(UserRegistrationForm.this, LoginPage.class);
@@ -28,12 +27,5 @@ public class UserRegistrationForm extends AppCompatActivity {
              }
          });
 
-         mButtonSignupShipper.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent intentshipperSignup = new Intent(UserRegistrationForm.this,ShipperRegistrationForm.class);
-                 startActivity(intentshipperSignup);
-             }
-         });
     }
 }
